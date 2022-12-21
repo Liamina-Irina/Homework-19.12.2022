@@ -9,10 +9,14 @@
 
 Console.Write("Введите цифру дня недели от 1 до 7: ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(DayOffNumber(number) ? $"{number} -> Да" : $"{number} -> Нет");
-
-bool DayOffNumber(int dayOffNum)
+if(number > 7 || number < 1)
+Console.WriteLine($"{number} не соответствует дню недели");
+else
 {
-    return dayOffNum == 6 || dayOffNum == 7;
-}
+    Console.WriteLine(DayOffNumber(number) ? $"{number} -> Да" : $"{number} -> Нет");
 
+    bool DayOffNumber(int dayOffNum)
+    {
+        return dayOffNum == 6 || dayOffNum == 7;
+    }
+}
