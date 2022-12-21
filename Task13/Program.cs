@@ -22,11 +22,11 @@ else
     {
         count = count / 10;
     }
-    int showThirdDigit = ShowThirdDigit(count);
-    Console.WriteLine($"{number} -> {showThirdDigit}");
-    int ShowThirdDigit(int num)
+}
+int showThirdDigit = ShowThirdDigit(count);
+Console.WriteLine($"{number} -> {showThirdDigit}");
+int ShowThirdDigit(int num)
     {
         int result = num % 10;
         return result;
     }
-}
