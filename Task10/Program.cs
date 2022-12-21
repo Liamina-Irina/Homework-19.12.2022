@@ -8,8 +8,8 @@
 // 782 -> 8
 // 918 -> 1
 
-int number = new Random().Next(100, 1000);
-Console.WriteLine($"Случайное трехзначное число: {number}");
+Console.Write("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
 int showSecondDigit = ShowSecondDigit(number);
 Console.WriteLine ($"{number} -> {showSecondDigit}");
